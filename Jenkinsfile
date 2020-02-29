@@ -6,12 +6,6 @@ pipeline {
         }
     }
     stages {
-        stage('Git') {
-            steps {
-                sh 'git config --global user.email georgianalinalexandru@gmail.com'
-                sh 'git config --global user.name G'
-            }
-        }
         stage('Install') { 
             steps {
                 sh 'npm install'
